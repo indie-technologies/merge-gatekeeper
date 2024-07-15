@@ -1,6 +1,7 @@
 ARG GO_VERSION=1.16.7
+ARG IMAGE_NAME=golang
 
-FROM golang:${GO_VERSION}-alpine
+FROM ${IMAGE_NAME}:${GO_VERSION}-alpine
 
 ARG ORG=upsidr
 ARG REPO=merge-gatekeeper
