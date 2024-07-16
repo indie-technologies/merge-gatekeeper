@@ -15,5 +15,3 @@ COPY . .
 
 RUN CGO_ENABLED=0 go build . \
     && mv merge-gatekeeper /go/bin/
-
-ENTRYPOINT ["/go/bin/merge-gatekeeper"]
